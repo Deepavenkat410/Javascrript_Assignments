@@ -11,31 +11,14 @@
 <script>
     function anagram(str1, str2) {
 
-    if (str1.length !== str2.length) {
+    let a = str1.split("").sort().join("");
+    let b = str2.split("").sort().join("");
+
+    if (a === b) {
+        return "Anagram";
+    } else {
         return "Not Anagram";
     }
-
-    for (let i = 0; i < str1.length; i++) {
-
-        let count1 = 0;
-        let count2 = 0;
-
-        for (let j = 0; j < str1.length; j++) {
-            if (str1[i] === str1[j]) {
-                count1++;
-            }
-
-            if (str1[i] === str2[j]) {
-                count2++;
-            }
-        }
-
-        if (count1 !== count2) {
-            return "Not Anagram";
-        }
-    }
-
-    return "Anagram";
 }
 
 console.log(anagram("listen", "silent"));
