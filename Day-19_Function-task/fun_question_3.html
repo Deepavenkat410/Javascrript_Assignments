@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Write a function findLargest(a, b, c)
+         that accepts three numbers and returns the largest number.</p>
+</body>
+<script>
+function findLargest(a,b,c){
+    if(a>=b && a>=c){
+        return a
+    }
+    else if(b>=a && b>=c){
+        return b
+    }
+    else{
+        return c
+    }
+}
+ console.log( 'largest num is',findLargest(4,3,2));
+ 
+ console.log( 'largest num is',findLargest(4,8,2));
+ 
+ console.log( 'largest num is',findLargest(4,3,9));
+
+</script>
+</html>
