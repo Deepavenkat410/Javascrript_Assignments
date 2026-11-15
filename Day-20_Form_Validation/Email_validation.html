@@ -18,13 +18,16 @@
 
     function emailsubmit(){
         let Email=document.myform.Email.value;
+        let pattern = /^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{2,}$/;
         if(Email===''){
             alert(' email  empty')
+            document.myform.Email.focus();
             return false;
         }
 
-        if(!(/^[^\s@]+@[^\s@]+\.[^\s@]+$/).test(Email)){
+        if(!pattern.test(Email)){
             alert('invalid email')
+            document.myform.Email.focus();
             return false;
 
         }
