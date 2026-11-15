@@ -6,31 +6,16 @@
     <title>Document</title>
 </head>
 <body>
- <p>Iterate an array using for loop, break and continue</p>   
+    
 </body>
 <script>
-    let arr = [1, 2, 3, 4, 5, 6];
+    for (let i = 1; i <= 11; i++) {
 
-for (let i = 0; i < arr.length; i++) {
-
-    if (arr[i] === 4) {
-        break;
-    }
-
-    console.log(arr[i]);
-}
-
-
-let num = [1, 2, 3, 4, 5, 6];
-
-for (let i = 0; i < num.length; i++) {
-
-    if (num[i] === 4) {
+    if (i === 5) {
         continue;
     }
 
-    console.log(arr[i]);
+    console.log(i);
 }
 </script>
-
 </html>
